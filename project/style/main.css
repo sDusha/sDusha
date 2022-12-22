@@ -1,0 +1,118 @@
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.main_main{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.news_block{
+    width: 100%;
+    padding: 0.2em;
+    margin: 0 2em;
+    background-color: antiquewhite;
+}
+
+.news_block ul{
+    padding: 0;
+}
+
+.news_block ul a{
+    width: 100%;
+}
+
+.news_block ul ol{
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.side_info{
+    min-width: 30%;
+    padding: 1em;
+    margin-right: 2em;
+}
+
+.news_btn{
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+
+
+.top_table{
+    border: 1px;
+}
+
+td, tr p{
+    margin: 0.2em 0;
+}
+
+h3{
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.top_drivers, .top_teams{
+    border-radius: 1em;
+    background-color: bisque;
+    margin-bottom: 2em;
+}
+
+.countdown-title {
+    font-family:"Nunito", "arial", sans-serif;
+  }
+   
+.timer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius:  1em;
+    border: 3px dashed red;
+}
+
+  .countdown {
+    font-family: sans-serif;
+ 
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+   
+  .countdown-number {
+    border-radius: 3px;
+    color: black;
+    display: inline-block;
+  }
+   
+  .countdown-time {
+    padding: 15px;
+    border-radius: 50%;
+    color: gray;
+    background: white;
+    display: inline-block;
+  }
+   
+  .countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+  
+@media screen and (max-width: 700px) {
+    .side_info{
+        width: 0%;
+        min-width: 0;
+        visibility: hidden;
+    }
+    .news_block{
+        width: 100%;
+    }
+}

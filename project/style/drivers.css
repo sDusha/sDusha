@@ -1,0 +1,41 @@
+.drivers_img1, 
+.drivers_img2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 30px 20px;
+}
+
+.photo_drivers{
+    min-width: none;
+    border-radius: 1em;
+}
+
+.drivers_info{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.drivers_info p{
+    line-height: 1;
+    font-size: 1.35em;
+}
+
+
+@media screen and (max-width: 800px) {
+    .photo_drivers{
+        max-width: 75px;
+    }
+
+    .drivers_info p{
+        font-size: 1em;
+    }
+}
+
+.invis{
+    visibility: hidden;
+}

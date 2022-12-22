@@ -1,0 +1,57 @@
+h2{
+    text-align: center;
+}
+
+.block_name{
+    padding: 5px;
+    padding-left: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.block_name :active{
+    color: gray;
+}
+
+
+.nav_aside{
+    position: sticky;
+    background-color: antiquewhite;
+    border-radius: 1em;
+    
+    top: 20px;
+}
+
+.block p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+.photo{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0 12.5%;
+}
+
+.photo img{
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 750px) {
+    .nav_aside{
+        visibility: hidden;
+    }
+
+    .content-600{
+        width: 100%;
+    }
+
+    .col-3-4{
+        width: 100%;
+    }
+
+    .col-1-4{
+        width: 0%;
+    }
+}

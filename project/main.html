@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1-fun</title>
+  <link rel="icon" type="media/image/png" href="media/image/icon.png">
+  <link rel="stylesheet" href="style/drivers.css">
+  <link rel="stylesheet" href="style/sidemenu.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/main_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_logo header_item">Formula1</div>
+    <nav class="header_section">
+
+        <div class="header_buttom header_item"><a class="white_color_text Nunito_font" href="main.html">Главная</a></div>
+        <div class="header_buttom header_item"><a class="white_color_text Nunito_font" href="photos.html">Фото</a></div>
+        <div class="header_buttom header_item"><a class="white_color_text Nunito_font" href="driverswiki.html">Гонщики  </a></div>
+    </nav>
+</header>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+            <li><a class="menu__item" href="main.html">Главная</a></li>
+            <li><a class="menu__item" href="photos.html">Фото</a></li>
+            <li><a class="menu__item" href="driverswiki.html">Гонщики</a></li>
+            <li><a class="menu__item" href="home.html">ТОП-5 гонщиков</a></li>
+    </ul>
+</div>
+<main class="main_main">
+    <div class="news_block">
+      <div class="timer">
+          <h1 class="countdown-title">Гран-При Бахрейна</h1>
+        <div id="countdown" class="countdown">
+          <div class="countdown-number">
+            <span class="days countdown-time"></span>
+            <span class="countdown-text">Days</span>
+          </div>
+          <div class="countdown-number">
+            <span class="hours countdown-time"></span>
+            <span class="countdown-text">Hours</span>
+          </div>
+          <div class="countdown-number">
+            <span class="minutes countdown-time"></span>
+            <span class="countdown-text">Minutes</span>
+          </div>
+          <div class="countdown-number">
+            <span class="seconds countdown-time"></span>
+            <span class="countdown-text">Seconds</span>
+          </div>
+        </div>
+        <script src="javascript/timer.js"></script>
+      </div>
+        <ul>
+            <ol><a id="news1" class="news_btn black_color_text" href="smth.html">Лучшие цитаты лучших гонщиков для лучших читателей</a></ol>
+            <ol><a id="news2" class="news_btn black_color_text" href="home.html">Топ-5 Величайших гонщиков всех времен и народов</a></ol>
+            <ol><a id="news3" class="news_btn black_color_text" href="#">Заголовок 3</a></ol>
+            <ol><a id="news4" class="news_btn black_color_text" href="#">Заголовок 4</a></ol>
+            <ol><a id="news5" class="news_btn black_color_text" href="#">Заголовок 5</a></ol>
+        </ul>
+    </div>
+    <acide class="side_info">
+      <div class="top_drivers">
+        <h3>Топ гонщиков</h3>
+        <table >
+          <thead>
+            <th>место</th>
+            <th><p>очки</p></th>
+            <th><p>гонщик</p></th>
+          </thead>
+          <tbody>
+            <tr id="1place"><td><p>1</p></td> <td><p id="1points"></p></td>  <td><p id="1driver"></p></td> </tr>
+            <tr id="2place"><td><p>2</p></td>  <td><p id="2points"></p></td>  <td><p id="2driver"></p></td> </tr>
+            <tr id="3place"><td><p>3</p></td>  <td><p id="3points"></p></td>  <td><p id="3driver"></p></td> </tr>
+            <tr><td><p>4</p></td>  <td><p id="4points"></p></td>  <td><p id="4driver"></p></td> </tr>
+            <tr><td><p>5</p></td>  <td><p id="5points"></p></td>  <td><p id="5driver"></p></td> </tr>
+            <tr><td><p>6</p></td>  <td><p id="6points"></p></td>  <td><p id="6driver"></p></td> </tr>
+            <tr><td><p>7</p></td>  <td><p id="7points"></p></td>  <td><p id="7driver"></p></td> </tr>
+            <tr><td><p>8</p></td>  <td><p id="8points"></p></td>  <td><p id="8driver"></p></td> </tr>
+            <tr><td><p>9</p></td>  <td><p id="9points"></p></td>  <td><p id="9driver"></p></td> </tr>
+            <tr><td><p>10</p></td>  <td><p id="10points"></p></td>  <td><p id="10driver"></p></td> </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="top_teams">
+        <h3>Топ команд</h3>
+        <table>
+          <thead>
+            <th>место</th>
+            <th>очки</th>
+            <th>команда</th>
+          </thead>
+          <tbody>
+            <tr><td><p>1</p></td>  <td><p id="1team_points"></p></td>  <td><p id="1team"></p></td> </tr>
+            <tr><td><p>2</p></td>  <td><p id="2team_points"></p></td>  <td><p id="2team"></p></td> </tr>
+            <tr><td><p>3</p></td>  <td><p id="3team_points"></p></td>  <td><p id="3team"></p></td> </tr>
+            <tr><td><p>4</p></td>  <td><p id="4team_points"></p></td>  <td><p id="4team"></p></td> </tr>
+            <tr><td><p>5</p></td>  <td><p id="5team_points"></p></td>  <td><p id="5team"></p></td> </tr>
+            <tr><td><p>6</p></td>  <td><p id="6team_points"></p></td>  <td><p id="6team"></p></td> </tr>
+            <tr><td><p>7</p></td>  <td><p id="7team_points"></p></td>  <td><p id="7team"></p></td> </tr>
+            <tr><td><p>8</p></td>  <td><p id="8team_points"></p></td>  <td><p id="8team"></p></td> </tr>
+            <tr><td><p>9</p></td>  <td><p id="9team_points"></p></td>  <td><p id="9team"></p></td> </tr>
+            <tr><td><p>10</p></td>  <td><p id="10team_points"></p></td>  <td><p id="10team"></p></td> </tr>
+          </tbody>
+        </table>
+      </div>
+    </acide>
+
+    <script src="javascript/images.js"></script>
+    <script src="javascript/teams_top.js"></script>
+
+    <script src="javascript/drivers.js"></script>
+    <script src="javascript/drivers_top.js"></script>
+
+</main>
+
+<footer>
+  <div class="my_name">
+    <p>Смирнов Андрей Юрьевич ИКБО-30-21</p>
+  </div> 
+  <div class="social_block">
+    <div class="social vk">
+      <a href="https://vk.com/andruw2003">
+        <img class="foot_img" src="media/images/social/VK.png" alt=":D">
+      </a>
+    </div>
+    <div class="social telegram">
+      <a href="https://t.me/El_booka">
+        <img class="foot_img" src="media/images/social/TG.png" alt=":D">
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
